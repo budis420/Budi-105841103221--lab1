@@ -34,8 +34,8 @@ const SignUp = () => {
                 </View>
 
                 <View style={styles.iconButtonContainer}>
-                    <IconButton imageSource={require('./assets/google.png')} />
-                    <IconButton imageSource={require('./assets/facebook.png')} />
+                    <IconButton imageSource={require('./assets/gulugulu.png')} />
+                    <IconButton imageSource={require('./assets/fb.png')} />
                 </View>
             </View>
         </SafeAreaView>

@@ -50,8 +50,8 @@ const Login = () => {
                     marginTop: 10,
                     justifyContent: 'center',
                 }}>
-                    <IconButton imageSource={require('./assets/google.png')} />
-                    <IconButton imageSource={require('./assets/facebook.png')} />
+                    <IconButton imageSource={require('./assets/gulugulu')} />
+                    <IconButton imageSource={require('./assets/fb.png')} />
                 </View>
             </View>
             </View>
