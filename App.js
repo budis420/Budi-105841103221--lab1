@@ -1,22 +1,35 @@
-import React from 'react';
-import { View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import SignUp from './SignUp';
-import Login from './Login';
-import ForgotPassword from './Forgot-Password';
-
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+import { useFonts } from 'expo-font'
 
 const App = () => {
-  return (
-    <View>
-      <SafeAreaView>
-        {/* <SignUp>  */}
-        {/* <Login> */}
-        <ForgotPassword />
-       
-      </SafeAreaView>
-    </View>
-  );
-}
+  
+  const [fontsLoaded, fontError] = useFonts({
+    'Metro-Bold': require('./assets/fonts/Metropolis-Bold.otf'),
+    'Metro-Medium': require('./assets/fonts/Metropolis-Medium.otf'),
+    'Metro-Semibold': require('./assets/fonts/Metropolis-SemiBold.otf'),
+    'Metro-Black': require('./assets/fonts/Metropolis-Black.otf'),
 
-export default App;
+
+  });
+      if (!fontsLoaded) return 
+      <View>
+          <Text>Font tidak ditemukan !</Text>
+      </View>
+
+  return (
+      <View style={{
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}>
+        <Text style={{ fontSize: 30}}>Font Biasa</Text>
+        <Text style={{ fontFamily: 'Metro-Bold', fontSize: 30 }}>Metro Bold</Text>
+        <Text style={{ fontFamily: 'Metro-Medium', fontSize: 30 }}>Metro Medium</Text>
+        <Text style={{ fontFamily: 'Metro-Semibold', fontSize: 30 }}>Metro SemiBold</Text>
+        <Text style={{ fontFamily: 'Metro-Black', fontSize: 30 }}>Metro Black</Text>
+
+      </View>
+    )
+}
+export default App

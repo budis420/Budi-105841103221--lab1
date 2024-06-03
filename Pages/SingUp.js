@@ -1,10 +1,10 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import Headline from './Component/HeadLine';
+import Headline from '../Component/HeadLine';
 import InputText from './Component/Input-Text';
-import ButtonComponent from './Component/Button';
-import Konfirmasi from './Component/Konfirmasi';
+import ButtonComponent from '../Component/Button';
+import Konfirmasi from '../Component/Konfirmasi';
 import IconButton from './Component/Icon-Button';
 
 const SignUp = () => {

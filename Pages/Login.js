@@ -2,10 +2,10 @@ import React from 'react';
 import { View } from 'react-native';
 import {SafeAreaView } from 'react-native-safe-area-context';
 import Headline from './Component/HeadLine';
-import InputText from './Component/Input-Text';
+import InputText from './Component/InputText';
 import ButtonComponent from './Component/Button';
 import Konfirmasi from './Component/Konfirmasi';
-import IconButton from './Component/Icon-Button';
+import IconButton from './Component/IconButton';
 
 const Login = () => {
     return (
